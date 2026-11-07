@@ -17,22 +17,122 @@
    * проверять постквантовую подпись скачиваемого пакета
 4. После реализации, будет проведено сравнение эффективности использования постквантовых и классических подписей
 
-## Выполнение
-### Настройка удаленного репозитория
+# Выполнение
+## Подготовка
+### Настройка клиента
 На первом этапе, в virtual box были созданы две виртуальные машины с arch linux (Одна из них выступает в роли сервера, на котором развернут репозиторий с пакетами для скачивания, вторая - в роли клиента).
 <img width="1920" height="1144" alt="image" src="https://github.com/user-attachments/assets/dc300fb6-0d6d-4ecd-8c91-bcc9dd7cb5e3" />
 У каждой виртуальной машины был создан отдельный сетевой интерфейс enp0s8 со статическим адресом (у сервера - 10.10.10.20, клиента - 10.10.10.10).
 <img width="1920" height="1144" alt="image" src="https://github.com/user-attachments/assets/b0514396-0a00-48bf-8a5e-2cc76190978f" />
 В файл конфигурации /etc/pacman.conf пакетного менеджера pacman машины-клиента были добвлены следующие строки:
-```
+```bash
 [TestRepo]
 SigLevel = Optional TrustAll
 Server = http://10.10.10.20:8000
 ```
-Таким образом, в список доступных репозиториев был добавлен TestRepo, располагающийся на порту 8000 машины-сервера. Для демонстрации скачивания пакета из удаленного репозитория был создан простой python скрипт test.
-```
-!python
+Таким образом, в список доступных репозиториев был добавлен TestRepo, располагающийся на порту 8000 машины-сервера. 
+
+### Настройка удаленного репозитория
+Для демонстрации скачивания пакета из удаленного репозитория был создан простой python скрипт test.
+```python
 #!/usr/sbin/python3
 print('hello from test repo!')
 ```
-На машине-сервере была создана следующая файловая структура
+На машине-сервере была создана следующая файловая структура.
+```bash
+~
+└── workspace
+    ├── build # директория для исходных файлов
+    ├── keys # директория для ключей
+    └── repo # репозиторий для скачивания файлов клиентом
+```
+В той же директории был создан файл PKGBUILD.
+```bash
+pkgname=test-package
+pkgver=1.0
+pkgrel=1
+pkgdesc="Test Python script for my repository"
+arch=('any')
+license=('custom')
+
+depends=('python')
+source=('test')
+
+package() {
+    install -Dm755 "$srcdir/test" "$pkgdir/usr/bin/test_package"
+}
+```
+Данный файл указывает пакетному менеджеру, что скрипт test имеет зависимость python, а также, что при установке пакет должен скачиваться в расположение /usr/bin/ под названием test_package. Также, данный файл содержит информацию о версии пакета, его лицензии, а также его описание. для упаковки пакета длля скачивания были выполнены команды: 
+```bash
+makepkg -g >> PKGBUILD
+makepkg
+```
+После этого, в данной директории был собран пакет test-package-1.0-1-any.pkg.tar.zst, который был скопирован в директорию ~/workspace/repo. В новом расположении был инциализирован репозиторий TestRepo следующей командой:
+```bash
+repo-add TestRepo.db.tar.gz test-package-1.0-1-any.pkg.tar.zst
+```
+После выполнения всех команд, файловая структура имеет следующий вид:
+```bash
+└── workspace
+    ├── build
+    │   └── test-build
+    │       ├── pkg
+    │       │   ├── test-package
+    │       │   │   └── usr
+    │       │   │       └── bin
+    │       │   │           └── test_package
+    │       │   └── test-package-debug
+    │       │       └── usr
+    │       │           ├── lib
+    │       │           │   └── debug
+    │       │           └── src
+    │       │               └── debug
+    │       │                   └── test-package
+    │       ├── PKGBUILD
+    │       ├── src
+    │       │   └── test -> /home/dmitrii/workspace/build/test-build/test
+    │       ├── test
+    │       └── test-package-1.0-1-any.pkg.tar.zst
+    ├── keys
+    └── repo
+        ├── test-package-1.0-1-any.pkg.tar.zst
+        ├── TestRepo.db -> TestRepo.db.tar.gz
+        ├── TestRepo.db.tar.gz
+        ├── TestRepo.files -> TestRepo.files.tar.gz
+        └── TestRepo.files.tar.gz
+```
+После этого, в директории repo был запущен http сервер 
+```bash
+python -m http.server   
+```
+### Проверка
+После всех этапов, на клиентской машине можно установить тестовый пакет
+```bash
+$ sudo pacman -S test-package
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) test-package-1.0-1
+
+Total Installed Size:  0.00 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ test-package-1.0-1-any              5.5 KiB  1385 KiB/s 00:00 [----------------------------------] 100%
+(1/1) checking keys in keyring                                 [----------------------------------] 100%
+(1/1) checking package integrity                               [----------------------------------] 100%
+(1/1) loading package files                                    [----------------------------------] 100%
+(1/1) checking for file conflicts                              [----------------------------------] 100%
+(1/1) checking available disk space                            [----------------------------------] 100%
+:: Processing package changes...
+(1/1) installing test-package                                  [----------------------------------] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+
+$ test_package
+hello from test repo!
+```
+
+
+
+
