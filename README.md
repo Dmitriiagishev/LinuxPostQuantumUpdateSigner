@@ -106,7 +106,7 @@ repo-add TestRepo.db.tar.gz test-package-1.0-1-any.pkg.tar.zst
 python -m http.server   
 ```
 ### Проверка
-После всех этапов, на клиентской машине можно установить тестовый пакет
+После всех этапов, на клиентской машине можно установить тестовый пакет:
 ```
 $ sudo pacman -S test-package
 resolving dependencies...
