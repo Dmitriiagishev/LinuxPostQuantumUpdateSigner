@@ -39,7 +39,7 @@ Server = http://10.10.10.20:8000
 print('hello from test repo!')
 ```
 На машине-сервере была создана следующая файловая структура.
-```bash
+```
 ~
 └── workspace
     ├── build # директория для исходных файлов
@@ -47,7 +47,7 @@ print('hello from test repo!')
     └── repo # репозиторий для скачивания файлов клиентом
 ```
 В той же директории был создан файл PKGBUILD.
-```bash
+```
 pkgname=test-package
 pkgver=1.0
 pkgrel=1
@@ -72,7 +72,7 @@ makepkg
 repo-add TestRepo.db.tar.gz test-package-1.0-1-any.pkg.tar.zst
 ```
 После выполнения всех команд, файловая структура имеет следующий вид:
-```bash
+```
 └── workspace
     ├── build
     │   └── test-build
@@ -107,7 +107,7 @@ python -m http.server
 ```
 ### Проверка
 После всех этапов, на клиентской машине можно установить тестовый пакет
-```bash
+```
 $ sudo pacman -S test-package
 resolving dependencies...
 looking for conflicting packages...
