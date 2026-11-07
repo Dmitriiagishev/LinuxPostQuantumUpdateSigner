@@ -1,0 +1,1932 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR "Pacman Development Team <pacman-dev@lists.archlinux.org>"
+# This file is distributed under the same license as the pacman-scripts package.
+#
+# Translators:
+# 3ff9a567ff32d540038a6a558650f376_643ea9b <38630839a6ec6b692ff2ca08fafb2585_10562>, 2011,2013
+# archetyp <archetyp@linuxmail.org>, 2013
+# archetyp <archetyp@linuxmail.org>, 2013-2016
+# archetyp <archetyp@linuxmail.org>, 2011-2012
+# Dušan Kazik <prescott66@gmail.com>, 2016
+# 3ff9a567ff32d540038a6a558650f376_643ea9b <38630839a6ec6b692ff2ca08fafb2585_10562>, 2011,2013
+# 3ff9a567ff32d540038a6a558650f376_643ea9b <38630839a6ec6b692ff2ca08fafb2585_10562>, 2011,2013
+# Erik Bročko <erik.brocko@letemsvetemapplem.eu>, 2018
+# Jose Riha <jose1711@gmail.com>, 2022,2024
+msgid ""
+msgstr ""
+"Project-Id-Version: Arch Linux Pacman package manager\n"
+"Report-Msgid-Bugs-To: https://gitlab.archlinux.org/pacman/pacman/-/issues\n"
+"POT-Creation-Date: 2025-11-01 20:25+1000\n"
+"PO-Revision-Date: 2011-08-08 22:35+0000\n"
+"Last-Translator: Jose Riha <jose1711@gmail.com>, 2022,2024\n"
+"Language-Team: Slovak (http://app.transifex.com/toofishes/archlinux-pacman/"
+"language/sk/)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
+">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+
+#: scripts/makepkg.sh.in:137
+msgid "Cleaning up..."
+msgstr "Prebieha čistenie..."
+
+#: scripts/makepkg.sh.in:184
+#, sh-printf-format
+msgid "Entering %s environment..."
+msgstr "Vstupujem do prostredia %s..."
+
+#: scripts/makepkg.sh.in:191 scripts/makepkg.sh.in:417
+#, sh-printf-format
+msgid "Starting %s()..."
+msgstr "Spúšťam %s()..."
+
+#: scripts/makepkg.sh.in:197
+#, sh-printf-format
+msgid "pkgver() generated an invalid version: %s"
+msgstr "pkgver() vygeneroval neplatnú verziu: %s"
+
+#: scripts/makepkg.sh.in:207
+#, sh-printf-format
+msgid "Failed to update %s from %s to %s"
+msgstr "Nepodarilo sa aktualizovať %s z %s na %s"
+
+#: scripts/makepkg.sh.in:213
+#, sh-printf-format
+msgid "Updated version: %s"
+msgstr "Aktualizovaná verzia: %s"
+
+#: scripts/makepkg.sh.in:215
+#, sh-printf-format
+msgid "%s is not writeable -- pkgver will not be updated"
+msgstr "%s nie je zapisovateľný -- pkgver nebude aktualizovaná"
+
+#: scripts/makepkg.sh.in:223
+#, sh-printf-format
+msgid "Unable to find source file %s."
+msgstr "Nepodarilo sa nájsť zdrojový súbor %s."
+
+#: scripts/makepkg.sh.in:224 scripts/makepkg.sh.in:366
+#: scripts/makepkg.sh.in:578 scripts/makepkg.sh.in:1087
+#: scripts/makepkg.sh.in:1092 scripts/makepkg.sh.in:1097
+#: scripts/makepkg.sh.in:1103 scripts/makepkg.sh.in:1113
+#: scripts/libmakepkg/executable/vcs.sh.in:46
+#: scripts/libmakepkg/integrity/generate_checksum.sh.in:62
+#: scripts/libmakepkg/source/bzr.sh.in:55
+#: scripts/libmakepkg/source/bzr.sh.in:86
+#: scripts/libmakepkg/source/bzr.sh.in:101
+#: scripts/libmakepkg/source/bzr.sh.in:106
+#: scripts/libmakepkg/source/file.sh.in:75
+#: scripts/libmakepkg/source/file.sh.in:145
+#: scripts/libmakepkg/source/fossil.sh.in:53
+#: scripts/libmakepkg/source/fossil.sh.in:60
+#: scripts/libmakepkg/source/fossil.sh.in:90
+#: scripts/libmakepkg/source/fossil.sh.in:96
+#: scripts/libmakepkg/source/fossil.sh.in:101
+#: scripts/libmakepkg/source/fossil.sh.in:115
+#: scripts/libmakepkg/source/fossil.sh.in:122
+#: scripts/libmakepkg/source/git.sh.in:56
+#: scripts/libmakepkg/source/git.sh.in:68
+#: scripts/libmakepkg/source/git.sh.in:104
+#: scripts/libmakepkg/source/git.sh.in:110
+#: scripts/libmakepkg/source/git.sh.in:127
+#: scripts/libmakepkg/source/git.sh.in:136
+#: scripts/libmakepkg/source/git.sh.in:144
+#: scripts/libmakepkg/source/hg.sh.in:52 scripts/libmakepkg/source/hg.sh.in:94
+#: scripts/libmakepkg/source/hg.sh.in:103
+#: scripts/libmakepkg/source/hg.sh.in:108
+#: scripts/libmakepkg/source/svn.sh.in:63
+#: scripts/libmakepkg/source/svn.sh.in:73
+#: scripts/libmakepkg/util/config.sh.in:47
+#: scripts/libmakepkg/util/source.sh.in:162
+#: scripts/libmakepkg/util/source.sh.in:171
+#: scripts/libmakepkg/util/util.sh.in:81
+msgid "Aborting..."
+msgstr "Prebieha rušenie..."
+
+#: scripts/makepkg.sh.in:249
+msgid "Pacman is currently in use, please wait..."
+msgstr "Pacman sa momentálne používa, počkajte prosím..."
+
+#: scripts/makepkg.sh.in:270
+#, sh-printf-format
+msgid "'%s' returned a fatal error (%i): %s"
+msgstr "'%s' vrátil fatálnu chybu (%i): %s"
+
+#: scripts/makepkg.sh.in:289
+msgid "Installing missing dependencies..."
+msgstr "Inštalujem chýbajúce závislosti..."
+
+#: scripts/makepkg.sh.in:292
+#, sh-printf-format
+msgid "'%s' failed to install missing dependencies."
+msgstr "'%s' zlyhal pri inštalácii chýbajúcich závislostí."
+
+#: scripts/makepkg.sh.in:327
+msgid "Missing dependencies:"
+msgstr "Chýbajúce závislosti:"
+
+#: scripts/makepkg.sh.in:343 scripts/makepkg.sh.in:357
+msgid "Failed to remove installed dependencies."
+msgstr "Zlyhalo odstránanie nainštalovaných závislostí."
+
+#: scripts/makepkg.sh.in:365
+#, sh-printf-format
+msgid "A failure occurred in %s()."
+msgstr "Chyba nastala v %s()."
+
+#: scripts/makepkg.sh.in:478
+#, sh-printf-format
+msgid "Invalid value for %s: %s"
+msgstr "Neplatná hodnota pre %s: %s"
+
+#: scripts/makepkg.sh.in:577
+#, sh-printf-format
+msgid "Missing %s directory."
+msgstr "Chýba adresár %s."
+
+#: scripts/makepkg.sh.in:583
+#, sh-printf-format
+msgid "Creating package \"%s\"..."
+msgstr "Vytváram balíček \"%s\"..."
+
+#: scripts/makepkg.sh.in:586 scripts/makepkg.sh.in:588
+#: scripts/makepkg.sh.in:676
+#, sh-printf-format
+msgid "Generating %s file..."
+msgstr "Generujem súbor %s..."
+
+#: scripts/makepkg.sh.in:596
+#, sh-printf-format
+msgid "Adding %s file..."
+msgstr "Pridávam súbor %s..."
+
+#: scripts/makepkg.sh.in:598
+#, sh-printf-format
+msgid "Failed to add %s file to package."
+msgstr "Nepodarilo sa pridať súbor %s do balíčka."
+
+#: scripts/makepkg.sh.in:616
+msgid "Generating .MTREE file..."
+msgstr "Generujem .MTREE súbor..."
+
+#: scripts/makepkg.sh.in:622
+msgid "Compressing package..."
+msgstr "Komprimujem balíček..."
+
+#: scripts/makepkg.sh.in:631
+msgid "Failed to create package file."
+msgstr "Chyba pri vytváraní balíčku."
+
+#: scripts/makepkg.sh.in:667
+msgid "Creating source package..."
+msgstr "Vytváram zdrojový balíček..."
+
+#: scripts/makepkg.sh.in:673 scripts/makepkg.sh.in:686
+#, sh-printf-format
+msgid "Adding %s..."
+msgstr "Pridávam %s..."
+
+#: scripts/makepkg.sh.in:707
+#, sh-printf-format
+msgid "Adding %s file (%s)..."
+msgstr "Pridávam soubor %s (%s)..."
+
+#: scripts/makepkg.sh.in:728
+msgid "Compressing source package..."
+msgstr "Komprimujem zdrojový balíček..."
+
+#: scripts/makepkg.sh.in:739
+msgid "Failed to create source package file."
+msgstr "Chyba pri vytváraní zdrojového balíčku."
+
+#: scripts/makepkg.sh.in:754
+#, sh-printf-format
+msgid "Installing package %s with %s..."
+msgstr "Inštalujem balíček %s pomocou %s..."
+
+#: scripts/makepkg.sh.in:756
+#, sh-printf-format
+msgid "Installing %s package group with %s..."
+msgstr "Inštaluje sa balíček skupiny  %s s %s..."
+
+#: scripts/makepkg.sh.in:777
+msgid "Failed to install built package(s)."
+msgstr "Chyba počas inštalácie vytvoreného balíčku(ov)."
+
+#: scripts/makepkg.sh.in:790
+msgid "A package has already been built, installing existing package..."
+msgstr "Balíček je už zostavený, inštalujem existujúci balíček..."
+
+#: scripts/makepkg.sh.in:794
+#, sh-printf-format
+msgid "A package has already been built. (use %s to overwrite)"
+msgstr "Balíček už bol vytvorený. (použite %s na prepísanie)"
+
+#: scripts/makepkg.sh.in:816
+msgid ""
+"The package group has already been built, installing existing packages..."
+msgstr "Skupina balíčkov je už zostavená, inštalujem existujúce balíčky..."
+
+#: scripts/makepkg.sh.in:820
+#, sh-printf-format
+msgid "The package group has already been built. (use %s to overwrite)"
+msgstr "Skupina balíčkov už bola vytvorená. (použite %s pre prepísanie)"
+
+#: scripts/makepkg.sh.in:825
+#, sh-printf-format
+msgid "Part of the package group has already been built. (use %s to overwrite)"
+msgstr "Časť balíčkov zo skupiny  je už vytvorená. (použite %s pre prepísanie)"
+
+#: scripts/makepkg.sh.in:883
+msgid "Make packages compatible for use with pacman"
+msgstr "Vytvorí balíčky kompatibilné na použitie s pacman-om."
+
+#: scripts/makepkg.sh.in:885 scripts/pacman-db-upgrade.sh.in:41
+#, sh-printf-format
+msgid "Usage: %s [options]"
+msgstr "Použitie: %s [voľby]"
+
+#: scripts/makepkg.sh.in:887 scripts/pacman-key.sh.in:82
+msgid "Options:"
+msgstr "Voľby:"
+
+#: scripts/makepkg.sh.in:888
+#, sh-printf-format
+msgid "  -A, --ignorearch Ignore incomplete %s field in %s"
+msgstr "  -A, --ignorearch Ignoruj neúplné %s pole v %s"
+
+#: scripts/makepkg.sh.in:889
+msgid "  -c, --clean      Clean up work files after build"
+msgstr "  -c, --clean      Odstráň pracovné súbory po zostavení"
+
+#: scripts/makepkg.sh.in:890
+#, sh-printf-format
+msgid "  -C, --cleanbuild Remove %s dir before building the package"
+msgstr "  -C, --cleanbuild Odstráň adresár %s pred vytvorením balíčka"
+
+#: scripts/makepkg.sh.in:891
+msgid "  -d, --nodeps     Skip all dependency checks"
+msgstr "  -d, --nodeps     Preskoč všetky kontroly závislostí"
+
+#: scripts/makepkg.sh.in:892
+msgid "  -D, --dir <dir>  Change to directory <dir> before processing PKGBUILD"
+msgstr ""
+
+#: scripts/makepkg.sh.in:893
+#, sh-printf-format
+msgid "  -e, --noextract  Do not extract source files (use existing %s dir)"
+msgstr ""
+"  -e, --noextract  Nerozbaľuj zdrojové súbory (použi existujúci %s adresár)"
+
+#: scripts/makepkg.sh.in:894
+msgid "  -f, --force      Overwrite existing package"
+msgstr "  -f, --force      Prepíš existujúci balíček"
+
+#: scripts/makepkg.sh.in:895
+msgid "  -g, --geninteg   Generate integrity checks for source files"
+msgstr "  -g, --geninteg   Vygeneruj kontrolné súčty zdrojových súborov"
+
+#: scripts/makepkg.sh.in:896
+msgid "  -h, --help       Show this help message and exit"
+msgstr "  -h, --help       Zobraz túto správu a skonči"
+
+#: scripts/makepkg.sh.in:897
+msgid "  -i, --install    Install package after successful build"
+msgstr "  -i, --install    Po úspešnom zostavení nainštaluj balíček"
+
+#: scripts/makepkg.sh.in:898
+msgid "  -L, --log        Log package build process"
+msgstr "  -L, --log        Zaznamenaj proces zostavenia balíčka"
+
+#: scripts/makepkg.sh.in:899
+msgid "  -m, --nocolor    Disable colorized output messages"
+msgstr "  -m, --nocolor    Vypni farebný výstup správ"
+
+#: scripts/makepkg.sh.in:900
+msgid "  -o, --nobuild    Download and extract files only"
+msgstr "  -o, --nobuild    Iba stiahni a rozbaľ súbory"
+
+#: scripts/makepkg.sh.in:901
+#, sh-printf-format
+msgid "  -p <file>        Use an alternate build script (instead of '%s')"
+msgstr "  -p <file>        Použi alternatívny build skript (miesto '%s')"
+
+#: scripts/makepkg.sh.in:902
+msgid ""
+"  -r, --rmdeps     Remove installed dependencies after a successful build"
+msgstr ""
+"  -r, --rmdeps     Po úspešnom zostavení odstráň nainštalované závislosti"
+
+#: scripts/makepkg.sh.in:903
+msgid "  -R, --repackage  Repackage contents of the package without rebuilding"
+msgstr "  -R, --repackage  Znovu zabaľ obsah balíčka bez zostavenia"
+
+#: scripts/makepkg.sh.in:904
+#, sh-printf-format
+msgid "  -s, --syncdeps   Install missing dependencies with %s"
+msgstr "  -s, --syncdeps   Inštaluj chýbajúce závislosti s %s"
+
+#: scripts/makepkg.sh.in:905
+msgid ""
+"  -S, --source     Generate a source-only tarball without downloaded sources"
+msgstr ""
+"  -S, --source     Vytvor čisto zdrojový archív bez stiahnutých zdrojov"
+
+#: scripts/makepkg.sh.in:906
+msgid "  -V, --version    Show version information and exit"
+msgstr " -V, --version Zobraz informácie o verzií programu a skonči"
+
+#: scripts/makepkg.sh.in:907
+msgid ""
+"  --allsource      Generate a source-only tarball including downloaded "
+"sources"
+msgstr "  --allsource      Vytvor zdrojový archív, vrátane sťahovaných súborov"
+
+#: scripts/makepkg.sh.in:908
+#, sh-printf-format
+msgid "  --check          Run the %s function in the %s"
+msgstr "  --check          Spusti %s funkciu v  %s"
+
+#: scripts/makepkg.sh.in:909
+#, sh-printf-format
+msgid "  --config <file>  Use an alternate config file (instead of '%s')"
+msgstr "  --config <file>  Použi alternatívny konfiguračný súbor (miesto '%s')"
+
+#: scripts/makepkg.sh.in:910
+msgid "  --holdver        Do not update VCS sources"
+msgstr "  --holdver        Neaktualizuj VCS zdroje"
+
+#: scripts/makepkg.sh.in:911
+#, sh-printf-format
+msgid ""
+"  --key <key>      Specify a key to use for %s signing instead of the default"
+msgstr "  --key <key>      Zadaj kľúč na podpísanie %s namiesto predvoleného"
+
+#: scripts/makepkg.sh.in:912
+msgid "  --noarchive      Do not create package archive"
+msgstr "  --noarchive      Nevytváraj archív balíčka"
+
+#: scripts/makepkg.sh.in:913
+#, sh-printf-format
+msgid "  --nocheck        Do not run the %s function in the %s"
+msgstr "  --nocheck        Nespúšťaj %s funkciu v %s"
+
+#: scripts/makepkg.sh.in:914
+#, sh-printf-format
+msgid "  --noprepare      Do not run the %s function in the %s"
+msgstr "  --noprepare      Preskoč funkciu %s v %s"
+
+#: scripts/makepkg.sh.in:915
+msgid "  --nosign         Do not create a signature for the package"
+msgstr "  --nosign         Nevytváraj podpis pre balíček"
+
+#: scripts/makepkg.sh.in:916
+msgid "  --packagelist    Only list package filepaths that would be produced"
+msgstr "  --packagelist Vypíš len cesty k balíčkom, ktoré by boli vytvorené"
+
+#: scripts/makepkg.sh.in:917
+msgid "  --printsrcinfo   Print the generated SRCINFO and exit"
+msgstr "  --printsrcinfo   Vypíš vygenerované SRCINFO a skonči"
+
+#: scripts/makepkg.sh.in:918
+#, sh-printf-format
+msgid "  --sign           Sign the resulting package with %s"
+msgstr "  --sign           Podpíš výsledný balíček s %s"
+
+#: scripts/makepkg.sh.in:919
+msgid "  --skipchecksums  Do not verify checksums of the source files"
+msgstr "  --skipchecksums  Neoveruj kontrolné súčty zdrojových súborov"
+
+#: scripts/makepkg.sh.in:920
+msgid ""
+"  --skipinteg      Do not perform any verification checks on source files"
+msgstr ""
+"  --skipinteg      Nevykonaj žiadne overovacie testy na zdrojových súboroch"
+
+#: scripts/makepkg.sh.in:921
+msgid "  --skippgpcheck   Do not verify source files with PGP signatures"
+msgstr "  --skippgpcheck   Neoveruj zdrojové súbory s PGP podpismi"
+
+#: scripts/makepkg.sh.in:922
+msgid ""
+"  --verifysource   Download source files (if needed) and perform integrity "
+"checks"
+msgstr ""
+"  --verifysource   Stiahni zdrojové súbory (ak potrebné) and over integritu"
+
+#: scripts/makepkg.sh.in:924
+#, sh-printf-format
+msgid "These options can be passed to %s:"
+msgstr "Tieto voľby bude spracovávať %s:"
+
+#: scripts/makepkg.sh.in:926
+msgid "  --asdeps         Install packages as non-explicitly installed"
+msgstr "  --asdeps         Inštaluj balíčky ako nie-explicitne inštalované"
+
+#: scripts/makepkg.sh.in:927
+msgid ""
+"  --needed         Do not reinstall the targets that are already up to date"
+msgstr "  --needed         Nepreinštalovávaj ciele, ktoré sú aktuálne"
+
+#: scripts/makepkg.sh.in:928
+msgid ""
+"  --noconfirm      Do not ask for confirmation when resolving dependencies"
+msgstr "  --noconfirm      Nepýtaj potvrdenie pri riešení závislostí"
+
+#: scripts/makepkg.sh.in:929
+msgid "  --noprogressbar  Do not show a progress bar when downloading files"
+msgstr "  --noprogressbar  Nezobrazuj priebeh sťahovania súborov"
+
+#: scripts/makepkg.sh.in:931
+#, sh-printf-format
+msgid "If %s is not specified, %s will look for '%s'"
+msgstr "Ak nie je zadané %s, %s bude hľadať '%s'"
+
+#: scripts/makepkg.sh.in:940 scripts/pacman-db-upgrade.sh.in:57
+#: scripts/pacman-key.sh.in:99 scripts/repo-add.sh.in:107
+msgid ""
+"This is free software; see the source for copying conditions.\\nThere is NO "
+"WARRANTY, to the extent permitted by law.\\n"
+msgstr ""
+
+#: scripts/makepkg.sh.in:1049 scripts/repo-add.sh.in:627
+#, sh-printf-format
+msgid "%s signal caught. Exiting..."
+msgstr "Signál %s bol zachytený. Ukončujem..."
+
+#: scripts/makepkg.sh.in:1119
+#, sh-printf-format
+msgid ""
+"Running %s as root is not allowed as it can cause permanent,\\ncatastrophic "
+"damage to your system."
+msgstr ""
+"Spustiť %s ako root nie je povolené, nakoľko by mohlo prísť k trvalému,"
+"\\nkatastrofálnemu poškodeniu Vášho systému."
+
+#: scripts/makepkg.sh.in:1125
+#, sh-printf-format
+msgid "Do not use the %s option. This option is only for internal use by %s."
+msgstr ""
+"Nepoužívajte voľbu %s. Táto možnosť je určená len pre vnútorné použitie %s."
+
+#: scripts/makepkg.sh.in:1140
+#, sh-printf-format
+msgid "%s does not exist."
+msgstr "%s neexistuje."
+
+#: scripts/makepkg.sh.in:1145
+#, sh-printf-format
+msgid "%s contains %s characters and cannot be sourced."
+msgstr "%s obsahuje %s znaky a nemôže byť preto načítaný."
+
+#: scripts/makepkg.sh.in:1150
+#, sh-printf-format
+msgid "%s must be in the current working directory."
+msgstr "%s musí byť aktuálny pracovný adresár."
+
+#: scripts/makepkg.sh.in:1246 scripts/makepkg.sh.in:1261
+#, sh-printf-format
+msgid "Leaving %s environment."
+msgstr "Opúšťam prostredie %s."
+
+#: scripts/makepkg.sh.in:1273
+#, sh-printf-format
+msgid "The key %s does not exist in your keyring."
+msgstr "Kľúč %s sa nenachádza vo vašej kľúčenke."
+
+#: scripts/makepkg.sh.in:1275 scripts/repo-add.sh.in:151
+msgid "There is no key in your keyring."
+msgstr "V kľúčenke sa nenechádza žiaden kľúč."
+
+#: scripts/makepkg.sh.in:1281
+#, sh-printf-format
+msgid "Making package: %s"
+msgstr "Vytváram balíček: %s"
+
+#: scripts/makepkg.sh.in:1287
+#, sh-printf-format
+msgid "A source package has already been built. (use %s to overwrite)"
+msgstr "Zdrojový balíček už bol vytvorený. (použite %s na prepísanie)"
+
+#: scripts/makepkg.sh.in:1307
+msgid "Signing package..."
+msgstr "Podpisuje sa balíček..."
+
+#: scripts/makepkg.sh.in:1311
+#, sh-printf-format
+msgid "Source package created: %s"
+msgstr "Zdrojový balíček vytvorený: %s"
+
+#: scripts/makepkg.sh.in:1317
+msgid "Skipping dependency checks."
+msgstr "Preskakujem kontrolu závislostí."
+
+#: scripts/makepkg.sh.in:1325
+msgid "Checking runtime dependencies..."
+msgstr "Zisťujem runtime závislosti..."
+
+#: scripts/makepkg.sh.in:1333
+msgid "Checking buildtime dependencies..."
+msgstr "Zisťujem buildtime závislosti..."
+
+#: scripts/makepkg.sh.in:1346
+msgid "Could not resolve all dependencies."
+msgstr "Nie je možné vyriešiť všetky závislosti."
+
+#: scripts/makepkg.sh.in:1357
+#, sh-printf-format
+msgid "Using existing %s tree"
+msgstr "Používam existujúci %s strom"
+
+#: scripts/makepkg.sh.in:1364 scripts/makepkg.sh.in:1395
+#, sh-printf-format
+msgid "Removing existing %s directory..."
+msgstr "Odstraňovanie existujúceho adresára %s..."
+
+#: scripts/makepkg.sh.in:1390
+msgid "Sources are ready."
+msgstr "Zdroje sú pripravené."
+
+#: scripts/makepkg.sh.in:1417
+msgid "Package directory is ready."
+msgstr "Adresár balíčka je pripravený."
+
+#: scripts/makepkg.sh.in:1421
+#, sh-printf-format
+msgid "Finished making: %s"
+msgstr "Dokončené vytváranie: %s"
+
+#: scripts/pacman-db-upgrade.sh.in:39
+msgid "Upgrade the local pacman database to a newer format"
+msgstr "Aktualizujem lokálnu databázu pacmana na novší formát"
+
+#: scripts/pacman-db-upgrade.sh.in:43
+msgid "options:"
+msgstr "voľby:"
+
+#: scripts/pacman-db-upgrade.sh.in:44
+msgid "  -d, --dbpath <path>  set an alternate database location"
+msgstr "  -d, --dbpath <path>  nastaviť iné umiestnenie databázy"
+
+#: scripts/pacman-db-upgrade.sh.in:45
+msgid "  -h, --help           show this help message and exit"
+msgstr "  -h, --help           zobraziť túto nápovedu a skončiť"
+
+#: scripts/pacman-db-upgrade.sh.in:46
+msgid "  -r, --root <path>    set an alternate installation root"
+msgstr "  -r, --root <path>     nastaviť iný koreňový adresár pre inštaláciu"
+
+#: scripts/pacman-db-upgrade.sh.in:47
+msgid "  -V, --version        show version information and exit"
+msgstr "  -V, --version        zobraziť verziu programu a skončiť"
+
+#: scripts/pacman-db-upgrade.sh.in:48
+msgid "  --config <path>      set an alternate configuration file"
+msgstr "  --config <path>      nastaviť alternatívny konfiguračný súbor"
+
+#: scripts/pacman-db-upgrade.sh.in:49
+msgid "  --nocolor            disable colorized output messages"
+msgstr "  --nocolor            vypnúť farebný výstup správ"
+
+#: scripts/pacman-db-upgrade.sh.in:122 scripts/repo-add.sh.in:409
+#, sh-printf-format
+msgid "%s does not exist or is not a directory."
+msgstr "%s neexistuje, alebo nie je adresárom."
+
+#: scripts/pacman-db-upgrade.sh.in:126
+#, sh-printf-format
+msgid "%s is not a pacman database directory."
+msgstr "%s nie je databázový adresár pacmana."
+
+#: scripts/pacman-db-upgrade.sh.in:130
+msgid "You must have correct permissions to upgrade the database."
+msgstr "Na upgrade databáze musíte mať správne oprávnenia."
+
+#: scripts/pacman-db-upgrade.sh.in:140
+msgid "Pacman lock file was found. Cannot run while pacman is running."
+msgstr "Bol nájdený zámok pacmana. Nedá sa pokračovať, kým pacman beží."
+
+#: scripts/pacman-db-upgrade.sh.in:152
+msgid "Pre-3.5 database format detected - upgrading..."
+msgstr "Zistený formát databáze pred verziu 3.5 - aktualizujem..."
+
+#: scripts/pacman-db-upgrade.sh.in:159
+msgid "Done."
+msgstr "Hotovo."
+
+#: scripts/pacman-db-upgrade.sh.in:163
+msgid "Pre-4.2 database format detected - upgrading..."
+msgstr "Zistený formát databáze pred verziou 4.2 - aktualizujem..."
+
+#: scripts/pacman-db-upgrade.sh.in:185
+#, sh-printf-format
+msgid "symlink '%s' points outside pacman root, manual repair required"
+msgstr ""
+"symlink '%s' ukazuje mimo koreňový adresár pacmana, manuálna oprava je nutná"
+
+#: scripts/pacman-key.sh.in:58
+#, sh-printf-format
+msgid "Usage: %s [options] operation [targets]"
+msgstr "Použitie: %s [voľby] operácia [ciele]"
+
+#: scripts/pacman-key.sh.in:60
+msgid "Manage pacman's list of trusted keys"
+msgstr "Spravuj zoznam dôveryhodných kľúčov pacmana"
+
+#: scripts/pacman-key.sh.in:62
+msgid "Operations:"
+msgstr "Operácie:"
+
+#: scripts/pacman-key.sh.in:63
+msgid "  -a, --add                 Add the specified keys (empty for stdin)"
+msgstr ""
+"  -a, --add                 Pridaj uvedené kľúče (prázdne pre štandardný "
+"vstup)"
+
+#: scripts/pacman-key.sh.in:64
+msgid "  -d, --delete              Remove the specified keyids"
+msgstr "  -d, --delete              Odstráň uvedené kľúče"
+
+#: scripts/pacman-key.sh.in:65
+msgid "  -e, --export              Export the specified or all keyids"
+msgstr "  -e, --export              Exportuj zadané alebo všetky kľúče"
+
+#: scripts/pacman-key.sh.in:66
+msgid ""
+"  -f, --finger              List fingerprint for specified or all keyids"
+msgstr ""
+"  -f, --finger              Zobraz odtlačky pre zadané alebo všetky kľúče"
+
+#: scripts/pacman-key.sh.in:67
+msgid "  -l, --list-keys           List the specified or all keys"
+msgstr "  -l, --list-keys           Zobraz zadané alebo všetky kľúče"
+
+#: scripts/pacman-key.sh.in:68
+msgid "  -r, --recv-keys           Fetch the specified keyids"
+msgstr "  -r, --recv-keys           Stiahni zadané kľúče"
+
+#: scripts/pacman-key.sh.in:69
+msgid "  -u, --updatedb            Update the trustdb of pacman"
+msgstr ""
+"  -u, --updatedb            Aktualizuj databázu dôveryhodnosti (trustdb) "
+"pacmana."
+
+#: scripts/pacman-key.sh.in:70
+msgid ""
+"  -v, --verify              Verify the file(s) specified by the signature(s)"
+msgstr "  -v, --verify              Over súbor(y) špecifikované podpismi"
+
+#: scripts/pacman-key.sh.in:71
+msgid ""
+"  --edit-key                Present a menu for key management task on keyids"
+msgstr "  --edit-key                Zobraz menu pre správu zadaných kľúčov"
+
+#: scripts/pacman-key.sh.in:72
+msgid "  --import                  Imports pubring.gpg from dir(s)"
+msgstr "  --import                  Importuj pubring.gpg z adresárov"
+
+#: scripts/pacman-key.sh.in:73
+msgid ""
+"  --import-trustdb          Imports ownertrust values from trustdb.gpg in "
+"dir(s)"
+msgstr ""
+"  --import-trustdb          Importuj dôveryhodných vlastníkov z trustdb.gpg "
+"v zadaných adresároch"
+
+#: scripts/pacman-key.sh.in:74
+msgid "  --init                    Ensure the keyring is properly initialized"
+msgstr ""
+"  --init                    Uisti sa, že kľúčenka je správne inicializovaná"
+
+#: scripts/pacman-key.sh.in:75
+msgid "  --list-sigs               List keys and their signatures"
+msgstr "  --list-sigs               Zobraz kľúče a ich podpisy"
+
+#: scripts/pacman-key.sh.in:76
+msgid "  --lsign-key               Locally sign the specified keyid"
+msgstr "  --lsign-key               Lokálne podpíš uvedený kľúč"
+
+#: scripts/pacman-key.sh.in:77
+#, sh-printf-format
+msgid ""
+"  --populate                Reload the default keys from the (given) "
+"keyrings\\n                            in '%s'"
+msgstr ""
+"  --populate                Znovu načítaj predvolené kľúče zo zadaných "
+"kľúčeniek\\n                            v '%s'"
+
+#: scripts/pacman-key.sh.in:79
+msgid ""
+"  --refresh-keys            Update specified or all keys from a keyserver"
+msgstr ""
+"  --refresh-keys            Aktualizuj zadané alebo všetky kľúče zo servera "
+"s kľúčmi"
+
+#: scripts/pacman-key.sh.in:80
+msgid "  --verbose                 Show extra information"
+msgstr "  --verbose                 Zobraziť dodatočné informácie"
+
+#: scripts/pacman-key.sh.in:83
+#, sh-printf-format
+msgid ""
+"  --config <file>           Use an alternate config file (instead "
+"of\\n                            '%s')"
+msgstr ""
+"  --config <file>           Použi alternatívny konfiguračný súbor "
+"(namiesto\\n                            '%s')"
+
+#: scripts/pacman-key.sh.in:85
+#, sh-printf-format
+msgid ""
+"  --gpgdir <dir>            Set an alternate directory for GnuPG "
+"(instead\\n                            of '%s')"
+msgstr ""
+"  --gpgdir <dir>            Nastav alternatívne adresár pre GnuPG "
+"(namiesto\\n                            '%s')"
+
+#: scripts/pacman-key.sh.in:87
+#, sh-printf-format
+msgid ""
+"  --populate-from <dir>     Set an alternate directory for --populate "
+"(instead\\n                            of '%s')"
+msgstr ""
+
+#: scripts/pacman-key.sh.in:89
+msgid "  --keyserver <server-url>  Specify a keyserver to use if necessary"
+msgstr ""
+"  --keyserver <server-url>  Použi zadaný server s kľúčmi v prípade potreby"
+
+#: scripts/pacman-key.sh.in:91
+msgid "  -h, --help                Show this help message and exit"
+msgstr "  -h, --help                Zobraz túto nápovedu a skonči"
+
+#: scripts/pacman-key.sh.in:92
+msgid "  -V, --version             Show program version"
+msgstr "  -V, --version             Zobraz verziu programu"
+
+#: scripts/pacman-key.sh.in:134
+msgid "Failed to lookup key by name:"
+msgstr "Nepodarilo sa vyhľadať kľúč podľa mena:"
+
+#: scripts/pacman-key.sh.in:142
+msgid "Key name is ambiguous:"
+msgstr "Meno kľúča nie je jednoznačné:"
+
+#: scripts/pacman-key.sh.in:150
+msgid "Generating pacman master key. This may take some time."
+msgstr "Generujem hlavný kľúč pre pacman. Môže to chvíľu trvať."
+
+#: scripts/pacman-key.sh.in:187
+#, sh-printf-format
+msgid "The key identified by %s could not be found locally."
+msgstr "Kľúč identifikovaný ako %s sa nepodarilo nájsť lokálne."
+
+#: scripts/pacman-key.sh.in:198 scripts/pacman-key.sh.in:210
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:219
+msgid "_"
+msgstr "_"
+
+#: scripts/pacman-key.sh.in:210
+msgid "flags"
+msgstr ""
+
+#: scripts/pacman-key.sh.in:264
+#, sh-printf-format
+msgid "You do not have sufficient permissions to read the %s keyring."
+msgstr "Nemáte dostatočné práve pre čítanie kľúčenky %s."
+
+#: scripts/pacman-key.sh.in:265
+#, sh-printf-format
+msgid "Use '%s' to correct the keyring permissions."
+msgstr "Použite '%s' pre opravu práv kľúčenky."
+
+#: scripts/pacman-key.sh.in:270
+msgid "You do not have sufficient permissions to run this command."
+msgstr "Nemáte dostatočné práva na spustenie tohto príkazu."
+
+#: scripts/pacman-key.sh.in:276
+msgid "There is no secret key available to sign with."
+msgstr "Nie je k dispozícií žiadny tajný kľúč pre podpisovanie."
+
+#: scripts/pacman-key.sh.in:277
+#, sh-printf-format
+msgid "Use '%s' to generate a default secret key."
+msgstr "Použi '%s' pre vygenerovanie prednastaveného kľúča."
+
+#: scripts/pacman-key.sh.in:295
+#, sh-printf-format
+msgid "No keyring files exist in %s."
+msgstr "V %s sa nenachádza žiadny súbor kľúčenky."
+
+#: scripts/pacman-key.sh.in:302
+#, sh-printf-format
+msgid "The keyring file %s does not exist."
+msgstr "Súbor kľúčenky %s neexistuje."
+
+#: scripts/pacman-key.sh.in:317
+#, sh-printf-format
+msgid "Appending keys from %s.gpg..."
+msgstr "Pridávam kľúče z %s.gpg ..."
+
+#: scripts/pacman-key.sh.in:357
+msgid "Locally signing trusted keys in keyring..."
+msgstr "Lokálne podpisujem dôverované kľúče z kľúčenky..."
+
+#: scripts/pacman-key.sh.in:359
+msgid "Importing owner trust values..."
+msgstr "Načítavam dôverovaných vlastníkov..."
+
+#: scripts/pacman-key.sh.in:369
+msgid "Disabling revoked keys in keyring..."
+msgstr "Deaktivujem odobraté kľúče z kľúčenky..."
+
+#: scripts/pacman-key.sh.in:372
+#, sh-printf-format
+msgid "Disabling key %s..."
+msgstr "Vyraďujem kľúč %s..."
+
+#: scripts/pacman-key.sh.in:378
+#, sh-printf-format
+msgid "Disabled %s key."
+msgid_plural "Disabled %s keys."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: scripts/pacman-key.sh.in:385
+msgid "A specified keyfile could not be added to the keyring."
+msgstr "Zadaný kľúč sa nepodarilo pridať do kľúčenky."
+
+#: scripts/pacman-key.sh.in:393
+msgid "A specified key could not be removed from the keyring."
+msgstr "Zadaný kľúč sa nepodarilo odobrať z kľúčenky."
+
+#: scripts/pacman-key.sh.in:403
+#, sh-printf-format
+msgid "The key identified by %s could not be edited."
+msgstr "Kľúč identifikovaný ako %s sa nepodarilo editovať."
+
+#: scripts/pacman-key.sh.in:415
+msgid "A specified key could not be exported from the keyring."
+msgstr "Zadaný kľúč sa nepodarilo exportovať z kľúčenky."
+
+#: scripts/pacman-key.sh.in:423
+msgid "The fingerprint of a specified key could not be determined."
+msgstr "Nepodarilo sa zistiť odtlačok zadaného kľúča."
+
+#: scripts/pacman-key.sh.in:436 scripts/pacman-key.sh.in:455
+#, sh-printf-format
+msgid "%s could not be imported."
+msgstr "%s sa nepodarilo importovať."
+
+#: scripts/pacman-key.sh.in:440 scripts/pacman-key.sh.in:459
+#, sh-printf-format
+msgid "File %s does not exist and could not be imported."
+msgstr "Súbor %s neexistuje a preto ho nemožno importovať."
+
+#: scripts/pacman-key.sh.in:471
+msgid "A specified key could not be listed."
+msgstr "Zadaný kľúč sa nepodarilo pridať do zoznamu."
+
+#: scripts/pacman-key.sh.in:479
+msgid "A specified signature could not be listed."
+msgstr "Zadaný podpis sa nepodarilo pridať do zoznamu."
+
+#: scripts/pacman-key.sh.in:491
+#, sh-printf-format
+msgid "Locally signing key %s..."
+msgstr "Lokálne podpisujem kľúč %s..."
+
+#: scripts/pacman-key.sh.in:496
+#, sh-printf-format
+msgid "%s could not be locally signed."
+msgstr "%s nemohol byť lokálne podpísaný."
+
+#: scripts/pacman-key.sh.in:506
+#, sh-printf-format
+msgid "Locally signed %s key."
+msgid_plural "Locally signed %s keys."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: scripts/pacman-key.sh.in:529
+msgid "Remote key not fetched correctly from WKD or keyserver."
+msgstr ""
+
+#: scripts/pacman-key.sh.in:534
+msgid "Remote key not fetched correctly from keyserver."
+msgstr "Kľúč sa nepodarilo stiahnuť zo servera kľúčov."
+
+#: scripts/pacman-key.sh.in:566
+#, sh-printf-format
+msgid "Could not update key: %s"
+msgstr ""
+
+#: scripts/pacman-key.sh.in:587 scripts/repo-add.sh.in:271
+#, sh-printf-format
+msgid "Cannot use armored signatures for packages: %s"
+msgstr "Nemožno použiť zosilnené podpisy pre balíčky: %s"
+
+#: scripts/pacman-key.sh.in:595
+#, sh-printf-format
+msgid "The signature verification for %s failed."
+msgstr ""
+
+#: scripts/pacman-key.sh.in:601
+#, sh-printf-format
+msgid "The signature %s is not trusted."
+msgstr ""
+
+#: scripts/pacman-key.sh.in:609
+msgid "Updating trust database..."
+msgstr "Aktualizujem databázu dôveryhodnosti..."
+
+#: scripts/pacman-key.sh.in:611
+msgid "Trust database could not be updated."
+msgstr "nepodarilo sa aktualizovať databázu dôvery."
+
+#: scripts/pacman-key.sh.in:690
+#, sh-printf-format
+msgid "Cannot find the %s binary required for all %s operations."
+msgstr "Nepodarilo sa nájsť súbor %s potrebný pre všetky %s operácie."
+
+#: scripts/pacman-key.sh.in:695
+#, sh-printf-format
+msgid "%s needs to be run as root for this operation."
+msgstr "%s musí byť spustený ako root pre túto operáciu."
+
+#: scripts/pacman-key.sh.in:701
+#, sh-printf-format
+msgid "%s configuration file '%s' not found."
+msgstr "%s konfiguračný súbor '%s' nebol nájdený."
+
+#: scripts/pacman-key.sh.in:724
+msgid "no operation specified (use -h for help)"
+msgstr "nebola zadaná žiadna operácia (použite -h pre nápovedu)"
+
+#: scripts/pacman-key.sh.in:729
+msgid "Multiple operations specified."
+msgstr "Bolo zadaných viacero operácií."
+
+#: scripts/pacman-key.sh.in:730
+#, sh-printf-format
+msgid "Please run %s with each operation separately."
+msgstr "Spustite prosím %s pre každú operáciou samostatne."
+
+#: scripts/pacman-key.sh.in:738
+msgid "No targets specified"
+msgstr "Žiadne ciele neboli špecifikované"
+
+#: scripts/repo-add.sh.in:62
+msgid "Usage: repo-add [options] <path-to-db> <package> ...\\n"
+msgstr ""
+
+#: scripts/repo-add.sh.in:64
+msgid ""
+"repo-add will update a package database by reading a package file."
+"\\nMultiple packages to add can be specified on the command line.\\n"
+msgstr ""
+"repo-add aktualizuje databázu balíčkov pomocou čítania súboru balíčka.\\nNa "
+"príkazovom riadku môže byť uvedených viac balíčkov pre pridanie.\\n"
+
+#: scripts/repo-add.sh.in:68 scripts/repo-add.sh.in:80
+msgid "Options:\\n"
+msgstr "Voľby:\\n"
+
+#: scripts/repo-add.sh.in:69
+msgid ""
+"  -n, --new         only add packages that are not already in the database\\n"
+msgstr ""
+"  -n, --new         pridaj len tie balíčky, ktoré ešte nie sú v databáze\\n"
+
+#: scripts/repo-add.sh.in:70
+msgid ""
+"  -p, --prevent-downgrade  do not add package to database if a newer version "
+"is already present\\n"
+msgstr ""
+
+#: scripts/repo-add.sh.in:71
+msgid ""
+"  --include-sigs    include package PGP signatures in the repository "
+"database (if available)\\n"
+msgstr ""
+
+#: scripts/repo-add.sh.in:73
+msgid "Usage: repo-remove [options] <path-to-db> <packagename> ...\\n"
+msgstr ""
+
+#: scripts/repo-add.sh.in:75
+msgid ""
+"repo-remove will update a package database by removing the package "
+"name\\nspecified on the command line from the given repo database. "
+"Multiple\\npackages to remove can be specified on the command line.\\n"
+msgstr ""
+"repo-remove aktualizuje databázu balíčkov odstránením balíčka podľa "
+"mena\\nuvedeného na príkazovom riadku z danej databázy. Na príkazovom riadku "
+"môže byť\\nuvedených viacero balíčkov na odstránenie.\\n"
+
+#: scripts/repo-add.sh.in:82
+msgid "Please move along, there is nothing to see here.\\n"
+msgstr "Prosím, posuňte sa ďalej, tu nie je nič k videniu.\\n"
+
+#: scripts/repo-add.sh.in:85
+msgid "  --nocolor         turn off color in output\\n"
+msgstr "  --nocolor         vypni farebný výstup\\n"
+
+#: scripts/repo-add.sh.in:86
+msgid "  -q, --quiet       minimize output\\n"
+msgstr "  -q, --quiet       minimalizuj výstup\\n"
+
+#: scripts/repo-add.sh.in:87
+msgid "  -s, --sign        sign database with GnuPG after update\\n"
+msgstr "  -s, --sign        podpíš databázu s GnuPG po aktualizácii\\n"
+
+#: scripts/repo-add.sh.in:88
+msgid "  -k, --key <key>   use the specified key to sign the database\\n"
+msgstr "  -k, --key <key>   použi zadaný kľúč na podpis databázy\\n"
+
+#: scripts/repo-add.sh.in:89
+msgid "  -v, --verify      verify database's signature before update\\n"
+msgstr "  -v, --verify      over podpis databázy pred aktualizáciou\\n"
+
+#: scripts/repo-add.sh.in:90
+msgid ""
+"  -R, --remove      remove old package file from disk after updating "
+"database\\n"
+msgstr ""
+"  -R, --remove      odstráň staré balíčky z disku po aktualizácii databázy\\n"
+
+#: scripts/repo-add.sh.in:91
+msgid "  -w, --wait-for-lock  retry to acquire lock file until success\\n"
+msgstr ""
+
+#: scripts/repo-add.sh.in:92
+#, sh-printf-format
+msgid ""
+"\\nSee %s(8) for more details and descriptions of the available options.\\n"
+msgstr "\\nPozri %s(8) pre podrobnosti a popis dostupných volieb.\\n"
+
+#: scripts/repo-add.sh.in:96
+msgid ""
+"Example:  repo-add /path/to/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
+msgstr ""
+"Príklad:  repo-add /cesta/k/repo.db.tar.gz pacman-3.0.0-1-i686.pkg.tar.gz\\n"
+
+#: scripts/repo-add.sh.in:98
+msgid "Example:  repo-remove /path/to/repo.db.tar.gz kernel26\\n"
+msgstr "Príklad:  repo-remove /cesta/d/repo.db.tar.gz kernel26\\n"
+
+#: scripts/repo-add.sh.in:142
+msgid "Cannot find the gpg binary! Is GnuPG installed?"
+msgstr "Nemôžem nájsť binárny súbor pre gpg! Je GnuPG je nainštalované?"
+
+#: scripts/repo-add.sh.in:163
+#, sh-printf-format
+msgid "Signing database '%s'..."
+msgstr "Podpisujem databázu '%s'..."
+
+#: scripts/repo-add.sh.in:172
+#, sh-printf-format
+msgid "Created signature file '%s'"
+msgstr "Vytvorený súbor s podpisom '%s'"
+
+#: scripts/repo-add.sh.in:174
+#, sh-printf-format
+msgid "Failed to sign package database file '%s'"
+msgstr "Nepodarilo sa podpísať súbor databázy balíčkov '%s'"
+
+#: scripts/repo-add.sh.in:183
+msgid "Verifying database signature..."
+msgstr "Overujem podpis databázy ..."
+
+#: scripts/repo-add.sh.in:186
+msgid "No existing signature found, skipping verification."
+msgstr "Žiaden existujúci podpis nebol nájdený, preskakujem overovanie."
+
+#: scripts/repo-add.sh.in:191
+msgid "Database signature file verified."
+msgstr "Podpis databázy bol overený."
+
+#: scripts/repo-add.sh.in:193
+msgid "Database signature was NOT valid!"
+msgstr "Podpis databázy nebol platný!"
+
+#: scripts/repo-add.sh.in:204
+#, sh-printf-format
+msgid "'%s' does not have a valid database archive extension."
+msgstr "'%s' nemá platnú príponu archívu databázy."
+
+#: scripts/repo-add.sh.in:241
+#, sh-printf-format
+msgid "Invalid package file '%s'."
+msgstr "Neplatný súbor balíčka '%s'."
+
+#: scripts/repo-add.sh.in:246
+#, sh-printf-format
+msgid "An entry for '%s' already existed"
+msgstr "Záznam pre '%s' už existuje"
+
+#: scripts/repo-add.sh.in:256
+#, sh-printf-format
+msgid "A newer version for '%s' is already present in database"
+msgstr ""
+
+#: scripts/repo-add.sh.in:276
+#, sh-printf-format
+msgid "Invalid package signature file '%s'."
+msgstr "Neplatný podpis balíčka '%s'."
+
+#: scripts/repo-add.sh.in:279
+msgid "Adding package signature..."
+msgstr "Pridávam podpis balíčka ..."
+
+#: scripts/repo-add.sh.in:286
+msgid "Computing checksums..."
+msgstr "Počíta sa kontrolná suma..."
+
+#: scripts/repo-add.sh.in:299 scripts/repo-add.sh.in:338
+#, sh-printf-format
+msgid "Creating '%s' db entry..."
+msgstr "Vytváram db záznam '%s'..."
+
+#: scripts/repo-add.sh.in:344 scripts/repo-add.sh.in:370
+#, sh-printf-format
+msgid "Removing old package file '%s'"
+msgstr "Odstraňujem starý balíček '%s'"
+
+#: scripts/repo-add.sh.in:363
+#, sh-printf-format
+msgid "Removing existing entry '%s'..."
+msgstr "Odstraňujem existujúci záznam '%s'..."
+
+#: scripts/repo-add.sh.in:420
+#, sh-printf-format
+msgid "Failed to acquire lockfile: %s. Retrying in 3 seconds."
+msgstr ""
+
+#: scripts/repo-add.sh.in:428
+#, sh-printf-format
+msgid "Failed to acquire lockfile: %s."
+msgstr "Zlyhalo získanie zamykacieho súboru: %s."
+
+#: scripts/repo-add.sh.in:429
+#, sh-printf-format
+msgid "Held by process %s"
+msgstr "Vlastnený procesom %s"
+
+#: scripts/repo-add.sh.in:443
+#, sh-printf-format
+msgid "Repository file '%s' is not a proper pacman database."
+msgstr "Súbor repozitára '%s' nie je korektnou databázou pacmana."
+
+#: scripts/repo-add.sh.in:448
+#, sh-printf-format
+msgid "Extracting %s to a temporary location..."
+msgstr ""
+
+#: scripts/repo-add.sh.in:456
+#, sh-printf-format
+msgid "Repository file '%s' was not found."
+msgstr "Repozitár '%s' nebol nájdený."
+
+#: scripts/repo-add.sh.in:463
+#, sh-printf-format
+msgid "Repository file '%s' could not be created."
+msgstr "Nepodarilo sa vytvoriť súbor repozitára '%s'."
+
+#: scripts/repo-add.sh.in:475
+#, sh-printf-format
+msgid "File '%s' not found."
+msgstr "Súbor '%s' nebol nájdený."
+
+#: scripts/repo-add.sh.in:481
+#, sh-printf-format
+msgid "'%s' is not a package file, skipping"
+msgstr "'%s' nie je súbor balíčka, preskakujem"
+
+#: scripts/repo-add.sh.in:485
+#, sh-printf-format
+msgid "Adding package '%s'"
+msgstr "Pridávam balíček '%s'"
+
+#: scripts/repo-add.sh.in:492
+#, sh-printf-format
+msgid "Searching for package '%s'..."
+msgstr "Vyhľadávam balíček '%s'..."
+
+#: scripts/repo-add.sh.in:495
+#, sh-printf-format
+msgid "Package matching '%s' not found."
+msgstr "Balíček zodpovedajúci '%s' nebol nájdený."
+
+#: scripts/repo-add.sh.in:559
+msgid "No packages remain, creating empty database."
+msgstr "Nezostali žiadne balíčky, vytváram prázdnu databázu."
+
+#: scripts/repo-add.sh.in:613
+#, sh-printf-format
+msgid "Invalid command name '%s' specified."
+msgstr "Bol zadaný chybný príkaz '%s'."
+
+#: scripts/repo-add.sh.in:618
+msgid "Cannot create temp directory for database building."
+msgstr "Nie je možné vytvoriť dočasný adresár pre zostavenie databázy."
+
+#: scripts/repo-add.sh.in:732
+msgid "Package database was not modified due to errors."
+msgstr ""
+
+#: scripts/repo-add.sh.in:737
+#, sh-printf-format
+msgid "Creating updated database file '%s'"
+msgstr "Vytváram aktualizovaný súbor databáze '%s'"
+
+#: scripts/repo-add.sh.in:741
+msgid "No changes made to package database."
+msgstr ""
+
+#: scripts/libmakepkg/executable/ccache.sh.in:34
+#, sh-printf-format
+msgid "Cannot find the %s binary required for compiler cache usage."
+msgstr ""
+"Nepodarilo sa nájsť súbor %s  potrebný pre použitie vyrovnávacej pamäte "
+"kompilátora."
+
+#: scripts/libmakepkg/executable/checksum.sh.in:38
+#, sh-printf-format
+msgid ""
+"Cannot find the %s binary required for source file checksums operations."
+msgstr ""
+"Nepodarilo sa nájsť program %s potrebný pre operácie s kontrolnými súčtami "
+"zdrojových súborov."
+
+#: scripts/libmakepkg/executable/debugedit.sh.in:35
+#, sh-printf-format
+msgid ""
+"Cannot find the %s binary required for including source files in debug "
+"packages."
+msgstr ""
+
+#: scripts/libmakepkg/executable/distcc.sh.in:34
+#, sh-printf-format
+msgid "Cannot find the %s binary required for distributed compilation."
+msgstr "Nepodarilo sa nájsť súbor %s potrebný pre distribuovanú kompiláciu."
+
+#: scripts/libmakepkg/executable/fakeroot.sh.in:33
+#, sh-printf-format
+msgid "Cannot find the %s binary."
+msgstr "Súbor %s nebol nájdený."
+
+#: scripts/libmakepkg/executable/gpg.sh.in:36
+#, sh-printf-format
+msgid "Cannot find the %s binary required for signing packages."
+msgstr "Nepodarilo sa nájsť súbor %s potrebný pre podpisovanie balíčkov."
+
+#: scripts/libmakepkg/executable/gpg.sh.in:43
+#, sh-printf-format
+msgid "Cannot find the %s binary required for verifying source files."
+msgstr "Nepodarilo sa nájsť súbor %s potrebný pre overenie zdrojových súborov."
+
+#: scripts/libmakepkg/executable/gzip.sh.in:34
+#, sh-printf-format
+msgid "Cannot find the %s binary required for compressing man and info pages."
+msgstr ""
+"Nepodarilo sa nájsť binárny %s  potrebný pre kompresiu manuálových a info "
+"stránok."
+
+#: scripts/libmakepkg/executable/pacman.sh.in:33
+#, sh-printf-format
+msgid "Cannot find the %s binary required for dependency operations."
+msgstr "Nepodarilo sa nájsť súbor %s potrebný pre operácie so závislosťami."
+
+#: scripts/libmakepkg/executable/strip.sh.in:34
+#, sh-printf-format
+msgid "Cannot find the %s binary required for object file stripping."
+msgstr ""
+"Nepodarilo sa nájsť binárny %s potrebný na odstraňovanie objektov súboru."
+
+#: scripts/libmakepkg/executable/sudo.sh.in:33
+#, sh-printf-format
+msgid "Cannot find the %s binary. Will use %s to acquire root privileges."
+msgstr ""
+"Nepodarilo sa nájsť súbor %s. Na získanie rootovských práv bude použitý %s."
+
+#: scripts/libmakepkg/executable/vcs.sh.in:45
+#: scripts/libmakepkg/util/source.sh.in:161
+#, sh-printf-format
+msgid "Unknown download protocol: %s"
+msgstr "Neznámy protokol pre sťahovanie: %s"
+
+#: scripts/libmakepkg/executable/vcs.sh.in:62
+#, sh-printf-format
+msgid "Cannot find the %s binary needed to check VCS source requirements."
+msgstr ""
+"Nepodarilo sa nájsť %s súbor potrebný pre overenie požiadaviek VCS zdroja."
+
+#: scripts/libmakepkg/executable/vcs.sh.in:90
+#, sh-printf-format
+msgid "Cannot find the %s package needed to handle %s sources."
+msgstr ""
+"Nepodarilo sa nájsť balíček %s potrebný pre spracovanie %s zdrojových "
+"súborov."
+
+#: scripts/libmakepkg/integrity/generate_checksum.sh.in:61
+#, sh-printf-format
+msgid "Failure while calculating %s %s checksum"
+msgstr ""
+
+#: scripts/libmakepkg/integrity/generate_checksum.sh.in:92
+msgid "Generating checksums for source files..."
+msgstr "Generujem kontrolné súčty zdrojových súborov..."
+
+#: scripts/libmakepkg/integrity/generate_checksum.sh.in:104
+#, sh-printf-format
+msgid "Invalid integrity algorithm '%s' specified."
+msgstr "Zadaný neplatný algoritmus '%s' pre kontrolu integrity."
+
+#: scripts/libmakepkg/integrity/generate_signature.sh.in:41
+#, sh-printf-format
+msgid "Created signature file %s."
+msgstr "Podpis súboru %s vytvorený."
+
+#: scripts/libmakepkg/integrity/generate_signature.sh.in:43
+#, sh-printf-format
+msgid "Failed to sign package file %s."
+msgstr ""
+
+#: scripts/libmakepkg/integrity/generate_signature.sh.in:58
+msgid "Signing package(s)..."
+msgstr "Podpisujú sa balíčky..."
+
+#: scripts/libmakepkg/integrity.sh.in:34
+msgid "Skipping all source file integrity checks."
+msgstr "Preskakujem kontrolu integrity všetkých zdrojových súborov."
+
+#: scripts/libmakepkg/integrity.sh.in:36
+msgid "Skipping verification of source file checksums."
+msgstr "Preskakujem overovanie kontrolných súčtov zdrojového súboru."
+
+#: scripts/libmakepkg/integrity.sh.in:39
+msgid "Skipping verification of source file PGP signatures."
+msgstr "Preskakujem overovanie PGP podpisov zdrojového súboru."
+
+#: scripts/libmakepkg/integrity/verify_checksum.sh.in:66
+#, sh-printf-format
+msgid "Integrity checks are missing for: %s"
+msgstr "Kontrolné súčty chýbajú pre: %s"
+
+#: scripts/libmakepkg/integrity/verify_checksum.sh.in:78
+msgid "Skipped"
+msgstr "Preskočené"
+
+#: scripts/libmakepkg/integrity/verify_checksum.sh.in:90
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:73
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:91
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:94
+msgid "FAILED"
+msgstr "NEPREŠIEL"
+
+#: scripts/libmakepkg/integrity/verify_checksum.sh.in:93
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:97
+msgid "Passed"
+msgstr "Prešiel"
+
+#: scripts/libmakepkg/integrity/verify_checksum.sh.in:114
+#, sh-printf-format
+msgid "Validating %s files with %s..."
+msgstr "Overujem súbory %s s %s..."
+
+#: scripts/libmakepkg/integrity/verify_checksum.sh.in:121
+msgid "One or more files did not pass the validity check!"
+msgstr "Jeden alebo viac súborov neprešlo kontrolou validity!"
+
+#: scripts/libmakepkg/integrity/verify_checksum.sh.in:125
+#, sh-printf-format
+msgid "Integrity checks (%s) differ in size from the source array."
+msgstr "Kontrolné súčty (%s) nesúhlasia s dĺžkou uvedenou v zdrojovom poli."
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:39
+#, sh-printf-format
+msgid "Verifying source file signatures with %s..."
+msgstr "Overovanie podpisov zdrojový súbor s %s..."
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:76
+msgid "unknown public key"
+msgstr "neznámy verejný kľúč"
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:79
+#, sh-printf-format
+msgid "public key %s has been revoked"
+msgstr "verejný kľúč %s bol odvolaný."
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:82
+msgid "bad signature from public key"
+msgstr "zlý podpis z verejného kľúča"
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:85
+msgid "error during signature verification"
+msgstr "chyba pri overovaní podpisu"
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:91
+#, sh-printf-format
+msgid "the public key %s is not trusted"
+msgstr "verejný kľúč %s nie je dôverovaný"
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:94
+msgid "invalid public key"
+msgstr "neplatný verejný kľúč"
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:100
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:104
+#: scripts/libmakepkg/util/message.sh.in:79
+#, sh-printf-format
+msgid "WARNING:"
+msgstr "UPOZORNENIE:"
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:100
+msgid "the signature has expired."
+msgstr "platnosť podpisu vypršala."
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:104
+msgid "the key has expired."
+msgstr "platnosť kľúča vypršala."
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:116
+msgid "One or more PGP signatures could not be verified!"
+msgstr "Jeden alebo viac PGP podpisov nemohlo byť overených!"
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:121
+msgid "Warnings have occurred while verifying the signatures."
+msgstr "Vyskytli sa upozornenia počas overovania podpisov."
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:122
+msgid "Please make sure you really trust them."
+msgstr "Prosím, ubezpečte sa, že im naozaj možete dôverovať."
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:138
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:214
+msgid "SIGNATURE NOT FOUND"
+msgstr "PODPIS NEBOL NÁJDENÝ"
+
+#: scripts/libmakepkg/integrity/verify_signature.sh.in:151
+msgid "SOURCE FILE NOT FOUND"
+msgstr "ZDROJOVÝ SÚBOR NEBOL NÁJDENÝ"
+
+#: scripts/libmakepkg/lint_config/buildenv.sh.in:43
+#: scripts/libmakepkg/lint_config/buildenv.sh.in:54
+#: scripts/libmakepkg/lint_pkgbuild/options.sh.in:52
+#, sh-printf-format
+msgid "%s array contains unknown option '%s'"
+msgstr "%s pole obsahuje neznámu voľbu '%s'"
+
+#: scripts/libmakepkg/lint_config/ext.sh.in:38
+#, sh-printf-format
+msgid "%s does not contain a valid package suffix (needs '%s', got '%s')"
+msgstr ""
+
+#: scripts/libmakepkg/lint_config/nproc.sh.in:36
+#: scripts/libmakepkg/lint_config/source_date_epoch.sh.in:33
+#, sh-printf-format
+msgid "%s contains invalid characters: %s"
+msgstr ""
+
+#: scripts/libmakepkg/lint_config/packager.sh.in:35
+msgid "PACKAGER should have the format 'Example Name <email@address.invalid>'"
+msgstr ""
+
+#: scripts/libmakepkg/lint_config/paths.sh.in:39
+#: scripts/libmakepkg/lint_pkgbuild/arch.sh.in:50
+#: scripts/libmakepkg/lint_pkgbuild/pkgname.sh.in:53
+#, sh-printf-format
+msgid "%s contains invalid characters: '%s'"
+msgstr "%s obsahuje nepovolené znaky: '%s'"
+
+#: scripts/libmakepkg/lint_config/variable.sh.in:47
+#: scripts/libmakepkg/lint_pkgbuild/variable.sh.in:40
+#: scripts/libmakepkg/lint_pkgbuild/variable.sh.in:52
+#: scripts/libmakepkg/lint_pkgbuild/variable.sh.in:72
+#: scripts/libmakepkg/lint_pkgbuild/variable.sh.in:82
+#, sh-printf-format
+msgid "%s should be an array"
+msgstr "%s má byť pole"
+
+#: scripts/libmakepkg/lint_config/variable.sh.in:57
+#: scripts/libmakepkg/lint_pkgbuild/variable.sh.in:62
+#: scripts/libmakepkg/lint_pkgbuild/variable.sh.in:90
+#, sh-printf-format
+msgid "%s should not be an array"
+msgstr "%s nemá byť pole"
+
+#: scripts/libmakepkg/lint_package/build_references.sh.in:36
+#, sh-printf-format
+msgid "Package contains reference to %s"
+msgstr "Balíček obsahuje odkaz na %s"
+
+#: scripts/libmakepkg/lint_package/dotfiles.sh.in:38
+#, sh-printf-format
+msgid "Dotfile found in package root '%s'"
+msgstr "V koreni balíčku '%s' existuje súbor s bodkou na začiatku"
+
+#: scripts/libmakepkg/lint_package/file_names.sh.in:36
+msgid "Package contains paths with newlines"
+msgstr "Balíček obsahuje cesty so znakmi nového riadka"
+
+#: scripts/libmakepkg/lint_package/missing_backup.sh.in:35
+#, sh-printf-format
+msgid "%s entry file not in package : %s"
+msgstr "%s vstupný súbor nie je v balíčku: %s"
+
+#: scripts/libmakepkg/lint_package.sh.in:41
+msgid "Checking for packaging issues..."
+msgstr "Kontrolujem chyby balenia..."
+
+#: scripts/libmakepkg/lint_pkgbuild/arch.sh.in:38
+#, sh-printf-format
+msgid "Can not use '%s' architecture with other architectures"
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/arch.sh.in:44
+#, sh-printf-format
+msgid "%s can not contain duplicate values"
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/arch.sh.in:59
+#: scripts/libmakepkg/lint_pkgbuild/pkgname.sh.in:37
+#: scripts/libmakepkg/lint_pkgbuild/pkgname.sh.in:65
+#: scripts/libmakepkg/lint_pkgbuild/pkgrel.sh.in:35
+#: scripts/libmakepkg/lint_pkgbuild/pkgver.sh.in:36
+#, sh-printf-format
+msgid "%s is not allowed to be empty."
+msgstr "%s nemôže byť prázdne."
+
+#: scripts/libmakepkg/lint_pkgbuild/arch.sh.in:66
+#, sh-printf-format
+msgid "%s is not available for the '%s' architecture."
+msgstr "%s nie je dostupný pre architektúru '%s'."
+
+#: scripts/libmakepkg/lint_pkgbuild/arch.sh.in:91
+#, sh-printf-format
+msgid ""
+"Overriden %s in package_%s() contains value not in global directive: '%s'"
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/arch_specific.sh.in:43
+#: scripts/libmakepkg/lint_pkgbuild/arch_specific.sh.in:65
+#, sh-printf-format
+msgid ""
+"Can not provide architecture specific variables for the '%s' architecture: %s"
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/arch_specific.sh.in:53
+#: scripts/libmakepkg/lint_pkgbuild/arch_specific.sh.in:74
+#, sh-printf-format
+msgid "%s can not be architecture specific: %s"
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/backup.sh.in:45
+#, sh-printf-format
+msgid "%s entry should not contain leading slash : %s"
+msgstr "Zápis %s nesmie obsahovať počiatočné lomítko: %s"
+
+#: scripts/libmakepkg/lint_pkgbuild/epoch.sh.in:36
+#, sh-printf-format
+msgid "%s must be an integer, not %s."
+msgstr "%s musí byť celé číslo, nie %s."
+
+#: scripts/libmakepkg/lint_pkgbuild/package_function.sh.in:38
+#, sh-printf-format
+msgid "Conflicting %s and %s functions in %s"
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/package_function.sh.in:41
+#, sh-printf-format
+msgid "Missing %s function in %s"
+msgstr "Chýba funkcia %s v %s"
+
+#: scripts/libmakepkg/lint_pkgbuild/package_function.sh.in:46
+#, sh-printf-format
+msgid "Extra %s function for split package '%s'"
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/package_function.sh.in:51
+#, sh-printf-format
+msgid "Missing %s function for split package '%s'"
+msgstr "Chýba %s funkcia pre rozdelenie balíčka '%s'"
+
+#: scripts/libmakepkg/lint_pkgbuild/package_function_variable.sh.in:46
+#: scripts/libmakepkg/lint_pkgbuild/package_function_variable.sh.in:55
+#, sh-printf-format
+msgid "%s can not be set inside a package function"
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/pkgname.sh.in:41
+#, sh-printf-format
+msgid "%s is not allowed to start with a hyphen."
+msgstr "%s nemôže začínať pomlčkou."
+
+#: scripts/libmakepkg/lint_pkgbuild/pkgname.sh.in:45
+#, sh-printf-format
+msgid "%s is not allowed to start with a dot."
+msgstr "%s nemôže začínať bodkou."
+
+#: scripts/libmakepkg/lint_pkgbuild/pkgname.sh.in:49
+#: scripts/libmakepkg/lint_pkgbuild/pkgver.sh.in:46
+#, sh-printf-format
+msgid "%s may only contain ascii characters."
+msgstr "%s smie obsahovať iba ascii znaky"
+
+#: scripts/libmakepkg/lint_pkgbuild/pkgrel.sh.in:40
+#, sh-printf-format
+msgid "%s must be of the form 'integer[.integer]', not %s."
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/pkgver.sh.in:41
+#, sh-printf-format
+msgid ""
+"%s is not allowed to contain colons, forward slashes, hyphens or whitespace."
+msgstr "%s nesmie obsahovať dvojbodky, lomky, pomlčky alebo medzery."
+
+#: scripts/libmakepkg/lint_pkgbuild/provides.sh.in:46
+#, sh-printf-format
+msgid "%s array cannot contain comparison (< or >) operators."
+msgstr "pole %s nesmie obsahovať porovnávacie operátory (< alebo >)."
+
+#: scripts/libmakepkg/lint_pkgbuild/source.sh.in:36
+msgid "Sparse arrays are not allowed for source"
+msgstr "Riedke polia nie sú povolené ako zdroj"
+
+#: scripts/libmakepkg/lint_pkgbuild/util.sh.in:34
+#, sh-printf-format
+msgid "%s file (%s) does not exist or is not a regular file."
+msgstr "%s súbor (%s) neexistuje alebo to nie je regulárny súbor."
+
+#: scripts/libmakepkg/lint_pkgbuild/variable.sh.in:108
+#, sh-printf-format
+msgid "%s does not allow empty values."
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/xdata.sh.in:44
+#, sh-printf-format
+msgid "%s array: Entries must contain exactly one equal sign, e.g. key=value."
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/xdata.sh.in:48
+#, sh-printf-format
+msgid "%s array: The key part of an entry must not be empty."
+msgstr ""
+
+#: scripts/libmakepkg/lint_pkgbuild/xdata.sh.in:52
+#, sh-printf-format
+msgid "%s array: The key 'pkgtype' is reserved for makepkg."
+msgstr ""
+
+#: scripts/libmakepkg/source/bzr.sh.in:52
+#, sh-printf-format
+msgid "Branching %s..."
+msgstr "Vetvím %s..."
+
+#: scripts/libmakepkg/source/bzr.sh.in:54
+#, sh-printf-format
+msgid "Failure while branching %s"
+msgstr "Chyba počas vetvenia %s"
+
+#: scripts/libmakepkg/source/bzr.sh.in:59
+#, sh-printf-format
+msgid "Pulling %s..."
+msgstr "Sťahujem %s..."
+
+#: scripts/libmakepkg/source/bzr.sh.in:63
+#, sh-printf-format
+msgid "Failure while pulling %s"
+msgstr "Chyba počas sťahovania %s"
+
+#: scripts/libmakepkg/source/bzr.sh.in:85
+#: scripts/libmakepkg/source/fossil.sh.in:114
+#: scripts/libmakepkg/source/git.sh.in:126
+#: scripts/libmakepkg/source/hg.sh.in:93 scripts/libmakepkg/source/svn.sh.in:62
+#, sh-printf-format
+msgid "Unrecognized reference: %s"
+msgstr "Nerozpoznaný odkaz: %s"
+
+#: scripts/libmakepkg/source/bzr.sh.in:94
+#: scripts/libmakepkg/source/fossil.sh.in:82
+#: scripts/libmakepkg/source/git.sh.in:95 scripts/libmakepkg/source/hg.sh.in:79
+#: scripts/libmakepkg/source/svn.sh.in:95
+#, sh-printf-format
+msgid "Creating working copy of %s %s repo..."
+msgstr "Vytváram pracovnú kópiu %s %s repozitára..."
+
+#: scripts/libmakepkg/source/bzr.sh.in:100
+#: scripts/libmakepkg/source/git.sh.in:103
+#: scripts/libmakepkg/source/hg.sh.in:102
+#, sh-printf-format
+msgid "Failure while updating working copy of %s %s repo"
+msgstr "Chyba pri aktualizovaní pracovnej kópie %s repozitára %s"
+
+#: scripts/libmakepkg/source/bzr.sh.in:105
+#: scripts/libmakepkg/source/fossil.sh.in:100
+#: scripts/libmakepkg/source/fossil.sh.in:121
+#: scripts/libmakepkg/source/git.sh.in:109
+#: scripts/libmakepkg/source/git.sh.in:143
+#: scripts/libmakepkg/source/hg.sh.in:107
+#, sh-printf-format
+msgid "Failure while creating working copy of %s %s repo"
+msgstr "Chyba pri vytváraní pracovnej kópie %s %s repozitára"
+
+#: scripts/libmakepkg/source/file.sh.in:36
+#: scripts/libmakepkg/source/local.sh.in:36
+#, sh-printf-format
+msgid "Found %s"
+msgstr "Nájdený %s"
+
+#: scripts/libmakepkg/source/file.sh.in:55
+#, sh-printf-format
+msgid "Downloading %s..."
+msgstr "Sťahujem %s..."
+
+#: scripts/libmakepkg/source/file.sh.in:74
+#, sh-printf-format
+msgid "Failure while downloading %s"
+msgstr "Chyba počas sťahovania %s"
+
+#: scripts/libmakepkg/source/file.sh.in:136
+#, sh-printf-format
+msgid "Extracting %s with %s"
+msgstr "Rozbaľujem %s pomocou %s"
+
+#: scripts/libmakepkg/source/file.sh.in:144
+#, sh-printf-format
+msgid "Failed to extract %s"
+msgstr "Chyba pri rozbaľovaní %s"
+
+#: scripts/libmakepkg/source/file.sh.in:159
+msgid "NOT FOUND"
+msgstr "NENÁJDENÝ"
+
+#: scripts/libmakepkg/source/fossil.sh.in:50
+#: scripts/libmakepkg/source/git.sh.in:53 scripts/libmakepkg/source/hg.sh.in:49
+#: scripts/libmakepkg/source/svn.sh.in:69
+#, sh-printf-format
+msgid "Cloning %s %s repo..."
+msgstr "Vytváram klon %s %s repozitára..."
+
+#: scripts/libmakepkg/source/fossil.sh.in:52
+#: scripts/libmakepkg/source/git.sh.in:55 scripts/libmakepkg/source/hg.sh.in:51
+#: scripts/libmakepkg/source/svn.sh.in:72
+#, sh-printf-format
+msgid "Failure while downloading %s %s repo"
+msgstr "Chyba počas sťahovania %s %s repozitára"
+
+#: scripts/libmakepkg/source/fossil.sh.in:59
+#: scripts/libmakepkg/source/git.sh.in:67
+#, sh-printf-format
+msgid "%s is not a clone of %s"
+msgstr "%s nie je klonom %s"
+
+#: scripts/libmakepkg/source/fossil.sh.in:63
+#: scripts/libmakepkg/source/git.sh.in:71 scripts/libmakepkg/source/hg.sh.in:56
+#: scripts/libmakepkg/source/svn.sh.in:77
+#, sh-printf-format
+msgid "Updating %s %s repo..."
+msgstr "Aktualizujem %s %s repozitár..."
+
+#: scripts/libmakepkg/source/fossil.sh.in:66
+#: scripts/libmakepkg/source/git.sh.in:74 scripts/libmakepkg/source/hg.sh.in:60
+#: scripts/libmakepkg/source/svn.sh.in:81
+#, sh-printf-format
+msgid "Failure while updating %s %s repo"
+msgstr "Chyba počas aktualizácie %s %s repozitára"
+
+#: scripts/libmakepkg/source/fossil.sh.in:89
+#: scripts/libmakepkg/source/fossil.sh.in:95
+#, sh-printf-format
+msgid "%s is not a checkout of %s repo %s"
+msgstr ""
+
+#: scripts/libmakepkg/source/git.sh.in:135
+#, sh-printf-format
+msgid "Failure while checking out version %s, the git tag has been forged"
+msgstr "Chyba pri prechode na verziu %s, štítok gitu bol podvrhnutý"
+
+#: scripts/libmakepkg/source/local.sh.in:39
+#, sh-printf-format
+msgid "%s was not found in the build directory and is not a URL."
+msgstr ""
+"%s nebol nájdený v adresári, kde sa robí zostavovanie, a nie je ani URL"
+
+#: scripts/libmakepkg/source.sh.in:40
+msgid "Retrieving sources..."
+msgstr "Získavam zdrojové súbory..."
+
+#: scripts/libmakepkg/source.sh.in:73
+msgid "Extracting sources..."
+msgstr "Rozbaľujem zdrojové súbory..."
+
+#: scripts/libmakepkg/tidy/10-docs.sh.in:34
+msgid "Removing doc files..."
+msgstr "Odstraňujem doc súbory..."
+
+#: scripts/libmakepkg/tidy/10-libtool.sh.in:35
+#, sh-printf-format
+msgid "Removing %s files..."
+msgstr "Odstraňujem %s súborov..."
+
+#: scripts/libmakepkg/tidy/10-staticlibs.sh.in:35
+msgid "Removing static library files..."
+msgstr "Odstraňujem súbory statických knižníc..."
+
+#: scripts/libmakepkg/tidy/50-purge.sh.in:35
+msgid "Purging unwanted files..."
+msgstr "Odstraňujem nepotrebné súbory..."
+
+#: scripts/libmakepkg/tidy/50-strip.sh.in:186
+msgid "Stripping unneeded symbols from binaries and libraries..."
+msgstr ""
+"Odstraňujem nepotrebné ladiace informácie z binárnych súborov a knižníc..."
+
+#: scripts/libmakepkg/tidy/50-strip.sh.in:240
+msgid "Copying source files needed for debug symbols..."
+msgstr "Kopírujem zdrojové súbory potrebné pre symboly ladenia..."
+
+#: scripts/libmakepkg/tidy/50-zipman.sh.in:35
+msgid "Compressing man and info pages..."
+msgstr "Komprimujem man a info stránky..."
+
+#: scripts/libmakepkg/tidy/90-emptydirs.sh.in:35
+msgid "Removing empty directories..."
+msgstr "Odstraňujem prázdne adresáre..."
+
+#: scripts/libmakepkg/tidy.sh.in:41
+msgid "Tidying install..."
+msgstr "Upratujem po inštalácii..."
+
+#: scripts/libmakepkg/util/compress.sh.in:38
+#, sh-printf-format
+msgid "'%s' is not a valid archive extension."
+msgstr "'%s' nie je platná prípona archívu."
+
+#: scripts/libmakepkg/util/config.sh.in:46
+#, sh-printf-format
+msgid "%s not found."
+msgstr "%s nebol nájdený."
+
+#: scripts/libmakepkg/util/message.sh.in:84
+#, sh-printf-format
+msgid "ERROR:"
+msgstr "CHYBA:"
+
+#: scripts/libmakepkg/util/parseopts.sh.in:81
+#, sh-printf-format
+msgid "option '%s' is ambiguous; possibilities:"
+msgstr "voľba '%s' nie je jednoznačná; možnosti:"
+
+#: scripts/libmakepkg/util/parseopts.sh.in:112
+#, sh-printf-format
+msgid "option requires an argument"
+msgstr "voľba vyžaduje argument"
+
+#: scripts/libmakepkg/util/parseopts.sh.in:134
+#: scripts/libmakepkg/util/parseopts.sh.in:187
+#, sh-printf-format
+msgid "invalid option"
+msgstr "neplatná voľba"
+
+#: scripts/libmakepkg/util/parseopts.sh.in:148
+#, sh-printf-format
+msgid "option '%s' does not allow an argument"
+msgstr "voľba '%s' neumožňuje argument"
+
+#: scripts/libmakepkg/util/parseopts.sh.in:166
+#, sh-printf-format
+msgid "option '%s' requires an argument"
+msgstr "voľba '%s' vyžaduje argument"
+
+#: scripts/libmakepkg/util/source.sh.in:170
+#, sh-printf-format
+msgid "The download program %s is not installed."
+msgstr "Program pre sťahovanie %s nie je nainštalovaný."
+
+#: scripts/libmakepkg/util/util.sh.in:80
+#, sh-printf-format
+msgid "Failed to change to directory %s"
+msgstr "Chyba pri zmene adresára %s"
+
+#: scripts/libmakepkg/util/util.sh.in:93
+#, sh-printf-format
+msgid "Failed to create the directory $%s (%s)."
+msgstr "Nepodarilo sa vytvoriť adresár $%s (%s)."
+
+#: scripts/libmakepkg/util/util.sh.in:96
+#, sh-printf-format
+msgid "You do not have write permission for the directory $%s (%s)."
+msgstr "Nemáte právo na zápis do adresára $%s (%s)."
+
+#: scripts/libmakepkg/util/util.sh.in:109
+#, sh-printf-format
+msgid "Failed to source %s"
+msgstr "Chyba pri vykonávaní %s"
